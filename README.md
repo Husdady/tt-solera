@@ -1,5 +1,8 @@
 ![Solera Logo](https://media-exp1.licdn.com/dms/image/C4E0BAQEv-RmhPPq0aw/company-logo_200_200/0/1599239465539?e=2147483647&v=beta&t=nguMOKesjnpwt44QhXD_BhGtC_EH140V_vjPOBE69Go)
+
+
 [![NPM Status](https://img.shields.io/npm/v/@craco/craco.svg)](https://www.npmjs.com/package/@craco/craco)
+
 # Solera technical test
 This app was created with [Create React App](https://github.com/facebook/create-react-app) with Typescript Templace. You need to have install [Node](https://nodejs.org/en/) for run this proyect. It is recommended to have a version of Node greater than 14 installed
 
