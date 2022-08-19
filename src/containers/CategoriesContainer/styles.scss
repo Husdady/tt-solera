@@ -9,6 +9,10 @@
     box-sizing: border-box;
     background-color: $opacity-card-color;
 
+    @media screen and (max-width: $mq-6) {
+      overflow-x: auto;
+    }
+
     .category {
       &-name {
         margin-left: $mr-short;
@@ -33,11 +37,21 @@
       &.desactive {
         opacity: .4;
       }
+
+      @media screen and (max-width: $mq-6) {
+        flex-shrink: 0;
+      }
     }
   }
 
   .tab-content {
     gap: 35px;
     display: flex;
+
+    @media screen and (max-width: $mq-2) {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      overflow: hidden;
+    }
   }
 }

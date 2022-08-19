@@ -10,6 +10,7 @@ import useServices from '@hooks/useServices'
 import useLanguages from '@hooks/useLanguages'
 
 // Interfaces
+import { LanguageType } from '@interfaces/Languages.interfaces'
 import { ServicesContainerProps } from '@interfaces/ServicesContainer.interface'
 
 // Types
@@ -46,13 +47,18 @@ const ServicesContainer: React.FC<ServicesContainerProps> = ({
 
   // Delete service
   const handleDelete = React.useCallback(
-    (serviceItem: ServiceType) => {
+    (
+      currentDictionary: LanguageType['dictionary'],
+      serviceItem: ServiceType
+    ) => {
       return () => {
         const { name } = serviceItem
         const serviceName =
           typeof name === 'string' ? name : name[lang as keyof typeof name]
 
-        const accept = window.confirm(`${dictionary.f0a7o2} "${serviceName}"?`)
+        const accept = window.confirm(
+          `${currentDictionary.f0a7o2} "${serviceName}"?`
+        )
 
         if (!accept) return false
 
@@ -72,8 +78,8 @@ const ServicesContainer: React.FC<ServicesContainerProps> = ({
       {filteredServices.map((filteredService: ServiceType) => (
         <ServiceCard
           key={filteredService.id}
-          onDeleteService={handleDelete(filteredService)}
           onEditService={handleEdit(service.id, filteredService)}
+          onDeleteService={handleDelete(dictionary, filteredService)}
           {...filteredService}
         />
       ))}

@@ -24,4 +24,25 @@
   &::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+
+  @media screen and (min-width: $mq-2) and (max-width: $mq-1) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: $mq-2) {
+    width: 100%;
+    overflow-y: initial;
+    max-height: none;
+    min-height: auto;
+    margin-bottom: $mr-medium;
+    padding-right: 0;
+  }
+
+  @media screen and (max-width: $mq-4) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: $mq-6) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

@@ -52,10 +52,21 @@
   }
 
   .service-actions {
+    .save, .cancel {
+      @media screen and (max-width: 1021px) {
+        width: 100%;
+      }
+    }
+
     .save {
       margin-right: $mr-2;
       color: $btn-save-form;
       border: 1px solid $btn-save-form;
+
+      @media screen and (max-width: 1021px) {
+        margin-right: 0;
+        margin-bottom: $mr-1;
+      }
 
       &:hover {
         background-color: $btn-save-form;
@@ -80,5 +91,9 @@
         color: #ffffff
       }
     }
+  }
+
+  @media screen and (max-width: $mq-2) {
+    width: 100%;
   }
 }

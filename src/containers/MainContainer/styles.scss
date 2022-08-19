@@ -5,4 +5,19 @@
   margin-top: $mr-large;
   margin-bottom: $mr-large;
   max-width: $max-width;
+
+  @media screen and (max-width: $mq-1) {
+    margin-left: $mr-large;
+    margin-right: $mr-large;
+  }
+
+  @media screen and (max-width: $mq-3) {
+    margin-left: $mr-medium;
+    margin-right: $mr-medium;
+  }
+
+  @media screen and (max-width: $mq-5) {
+    margin-left: $mr-min;
+    margin-right: $mr-min;
+  }
 }
