@@ -1,0 +1,43 @@
+.tabs {
+  .categories {
+    gap: $tab-gap;
+    display: flex;
+    align-items: center;
+    padding: $pd-medium;
+    margin-top: $mr-3;
+    margin-bottom: $mr-3;
+    box-sizing: border-box;
+    background-color: $opacity-card-color;
+
+    .category {
+      &-name {
+        margin-left: $mr-short;
+      }
+
+      &.active, &.desactive:hover {
+        opacity: 1;
+
+        &.ccc02 {
+          color: $cars-color
+        }
+
+        &.ccc03 {
+          color: $health-color
+        }
+
+        &.ccc04 {
+          color: $home-color
+        }
+      }
+
+      &.desactive {
+        opacity: .4;
+      }
+    }
+  }
+
+  .tab-content {
+    gap: 35px;
+    display: flex;
+  }
+}

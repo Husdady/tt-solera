@@ -1,0 +1,38 @@
+[
+  {
+    "id": "7297f3be-560c-4eb5-ac1e-a88931fc42f9",
+    "categoryIcon": "border-all",
+    "alt": "ccc01",
+    "name": {
+      "es": "Todos",
+      "en": "All"
+    }
+  },
+  {
+    "id": "eee46b33-f8f4-4e81-8913-8359ebecfa3d",
+    "categoryIcon": "car",
+    "alt": "ccc02",
+    "name": {
+      "es": "Autos",
+      "en": "Cars"
+    }
+  },
+  {
+    "id": "a56e4cd6-7e56-4133-a305-f9f3e3044e62",
+    "categoryIcon": "briefcase-medical",
+    "alt": "ccc03",
+    "name": {
+      "es": "Salud",
+      "en": "Health"
+    }
+  },
+  {
+    "id": "23ed9530-641e-4e66-a2ca-339c6ccc0ceb",
+    "categoryIcon": "home",
+    "alt": "ccc04",
+    "name": {
+      "es": "Hogar",
+      "en": "Home"
+    }
+  }
+]

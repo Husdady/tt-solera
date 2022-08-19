@@ -1,0 +1,43 @@
+.service {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: $br-radius-2;
+  border: 1px solid $opacity-border-color;
+
+  &-wrapper {
+    padding: $pd-medium;
+
+    .service {
+      &-name {
+        margin-bottom: $mr-3;
+        font-size: $fs-subtitle;
+      }
+
+      &-description {
+        line-height: $lh-card;
+        word-break: break-word;
+        color: $text-card-description;
+      }
+    }
+  }
+
+  &-actions {
+    padding: $pd-medium;
+    background-color: $opacity-card-color;
+    border-top: 1px solid $opacity-border-color;
+
+    & > button {
+      border-radius: $br-radius-1;
+    }
+
+    .edit {
+      margin-right: $mr-2;
+    }
+
+    .delete {
+      color: #ffffff;
+    }
+  }
+}

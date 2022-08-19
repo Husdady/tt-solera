@@ -1,0 +1,29 @@
+.multi-lang {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 4px 6px;
+  border-radius: 5px;
+
+  &:active {
+    transform: scale(85%);
+  }
+
+  > img {
+    object-fit: cover;
+    width: 100%;
+    height: 11px;
+  }
+
+  > span {
+    margin-left: 4px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #1b809f;
+    margin-top: -1.5px;
+  }
+}

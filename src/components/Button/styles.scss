@@ -1,0 +1,13 @@
+.btn {
+  border: none;
+  padding: $pd-1;
+  background-color: $btn-background-color;
+
+  &:active {
+    transform: scale(85%);
+  }
+
+  & > span {
+    margin-left: $mr-short;
+  }
+}

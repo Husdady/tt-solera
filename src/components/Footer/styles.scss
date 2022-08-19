@@ -1,0 +1,14 @@
+footer {
+  text-align: center;
+  padding: $pd-medium;
+  color: #bbbbbb;
+  background-color: $footer-background;
+
+  > a {
+    color: #a0069b;
+
+    &:hover {
+      opacity: .6;
+    }
+  }
+}

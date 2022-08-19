@@ -1,0 +1,8 @@
+.error-message {
+  margin-top: $mr-1;
+  color: $error-message-color;
+
+  > span {
+    margin-left: 4px;
+  }
+}

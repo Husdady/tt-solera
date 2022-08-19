@@ -1,0 +1,21 @@
+.error-application {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  > img {
+    width: 100px;
+    height: auto;
+    display: block;
+  }
+
+  > code {
+    display: block;
+    text-align: center;
+    margin-top: $mr-1;
+    color: #a01616;
+    max-width: 500px;
+  }
+}

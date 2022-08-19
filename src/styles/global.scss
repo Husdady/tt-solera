@@ -1,0 +1,31 @@
+// Global Styles
+@import './_reset.scss';
+@import './_colors.scss';
+@import './_custom.scss';
+
+// Components Styles
+@import 'src/components/Footer/styles.scss';
+@import 'src/components/Button/styles.scss';
+@import 'src/components/AppLogo/styles.scss';
+@import 'src/components/MultiLang/styles.scss';
+@import 'src/components/ServiceCard/styles.scss';
+@import 'src/components/ServiceForm/styles.scss';
+@import 'src/components/ErrorMessage/styles.scss';
+@import 'src/components/ErrorBoundary/styles.scss';
+
+// Containers Styles
+@import 'src/containers/MainContainer/styles.scss';
+@import 'src/containers/CategoriesContainer/styles.scss';
+@import 'src/containers/ServicesContainer/styles.scss';
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+.cursor-pointer:hover {
+  cursor: pointer;
+}
+
+.w-100 {
+  width: 100%;
+}

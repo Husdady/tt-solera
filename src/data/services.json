@@ -1,0 +1,65 @@
+[
+  {
+    "id": "9ca197fc-b353-4fff-9425-b99f636198d9",
+    "categories": ["23ed9530-641e-4e66-a2ca-339c6ccc0ceb"],
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
+    "name": {
+      "es": "Electricidad",
+      "en": "Electricity"
+    }
+  },
+  {
+    "id": "d6c42271-1ed2-45e4-ae99-f9cc9dcd5601",
+    "categories": [
+      "eee46b33-f8f4-4e81-8913-8359ebecfa3d",
+      "a56e4cd6-7e56-4133-a305-f9f3e3044e62"
+    ],
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
+    "name": {
+      "es": "Auxilio mecánico",
+      "en": "Mechanical Assistance"
+    }
+  },
+  {
+    "id": "d2756fff-acdc-405f-ab60-a7ba6f721898",
+    "categories": ["eee46b33-f8f4-4e81-8913-8359ebecfa3d"],
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
+    "name": {
+      "es": "Chofer reemplazo",
+      "en": "Replacement Driver"
+    }
+  },
+  {
+    "id": "84cfd7b8-f995-4fe5-974c-08e73708934d",
+    "categories": [
+      "23ed9530-641e-4e66-a2ca-339c6ccc0ceb",
+      "a56e4cd6-7e56-4133-a305-f9f3e3044e62"
+    ],
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
+    "name": {
+      "es": "Médico a domicilio",
+      "en": "Home Doctor"
+    }
+  },
+  {
+    "id": "58a48c2a-63fb-4811-81c2-d7a9a61ea896",
+    "categories": [
+      "eee46b33-f8f4-4e81-8913-8359ebecfa3d",
+      "a56e4cd6-7e56-4133-a305-f9f3e3044e62"
+    ],
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
+    "name": {
+      "es": "Ambulancia",
+      "en": "Ambulance"
+    }
+  },
+  {
+    "id": "1d64e026-a714-4109-b430-4d0ffac1d4fa",
+    "categories": ["23ed9530-641e-4e66-a2ca-339c6ccc0ceb"],
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s",
+    "name": {
+      "es": "Gasfitero",
+      "en": "Plumber"
+    }
+  }
+]

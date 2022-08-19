@@ -1,0 +1,27 @@
+.services {
+  width: 75%;
+  display: grid;
+  grid-gap: $services-gap;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(min-content, max-content);
+  overflow-y: auto;
+  max-height: 1000px;
+  min-height: 1000px;
+  padding-right: $pd-1;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}

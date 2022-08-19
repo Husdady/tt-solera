@@ -1,0 +1,84 @@
+.service-form {
+  width: 35%;
+  height: 100%;
+  display: table;
+  border-radius: $br-radius-2;
+  border: 1px solid $opacity-border-color;
+
+  .wrapper {
+    padding: $pd-medium;
+
+    > h1 {
+      margin-bottom: $mr-2;
+      font-size: 1.45em;
+    }
+
+    .field {
+      &-name {
+        margin-bottom: $mr-3;
+      }
+
+      &-description {
+        margin-bottom: $mr-2;
+      }
+
+      &-name,
+      &-description,
+      &-categories {
+        > h3 {
+          font-size: 1.1em;
+          letter-spacing: 1.1;
+          margin-bottom: $mr-1;
+          color: $text-card-description;
+        }
+
+        > textarea {
+          resize: none;
+        }
+
+        > input,
+        textarea {
+          padding: $pd-1;
+          box-sizing: border-box;
+          border-radius: $br-radius-1;
+          border: 1px solid $opacity-border-color;
+
+          &:focus {
+            outline: 1px solid $outline-color;
+          }
+        }
+      }
+    }
+  }
+
+  .service-actions {
+    .save {
+      margin-right: $mr-2;
+      color: $btn-save-form;
+      border: 1px solid $btn-save-form;
+
+      &:hover {
+        background-color: $btn-save-form;
+      }
+    }
+
+    .cancel {
+      color: $btn-cancel-form;
+      border: 1px solid $btn-cancel-form;
+
+      &:hover {
+        background-color: $btn-cancel-form;
+      }
+    }
+
+    .save,
+    .cancel {
+      transition: all linear 0.2s;
+      background-color: #ffffff;
+
+      &:hover {
+        color: #ffffff
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "language": "es",
+    "dictionary": {
+      "f0a7o2": "¿Estás seguro o segura que deseas eliminar el servicio",
+      "app-logo-dajs10": "Servicios",
+      "service-edit-op192d": "Editar",
+      "service-delete-op192d": "Eliminar",
+      "form-dk12s3": "Grabar",
+      "form-dk12s4": "Cancelar",
+      "form-dk12s5": "Selecciona una categoría",
+      "form-dk12s6": "Categorías",
+      "form-dk12s7": "Servicio",
+      "form-dk12s8": "Nombre",
+      "form-dk12s9": "Descripción",
+      "footer-ps912x": "Desarrollado por",
+      "error-application-sidh18": "Ah ocurrido un error inesperado en la aplicación. Estamos solucionando el error encontrado"
+    }
+  },
+  {
+    "language": "en",
+    "dictionary": {
+      "f0a7o2": "Are you sure you want to delete the service",
+      "app-logo-dajs10": "Services",
+      "service-edit-op192d": "Edit",
+      "service-delete-op192d": "Delete",
+      "form-dk12s3": "Save",
+      "form-dk12s4": "Cancel",
+      "form-dk12s5": "Select a category",
+      "form-dk12s6": "Categories",
+      "form-dk12s7": "Service",
+      "form-dk12s8": "Name",
+      "form-dk12s9": "Description",
+      "footer-ps912x": "Powered by",
+      "error-application-sidh18": "An unexpected error has occurred in the application. We are solving the error found"
+    }
+  }
+]

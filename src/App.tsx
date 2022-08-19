@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// React
+import { Suspense, lazy } from 'react'
 
-function App() {
+// Components
+import ErrorBoundary from '@components/ErrorBoundary'
+
+// Librarys
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
+import { library, IconPack } from '@fortawesome/fontawesome-svg-core'
+
+// Styles
+import '@styles/global.scss'
+
+library.add(far as IconPack, fas as IconPack, fab as IconPack)
+
+const MainContainer = lazy(() => import('@containers/MainContainer'))
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Suspense fallback="Loading...">
+      <ErrorBoundary>
+        <MainContainer />
+      </ErrorBoundary>
+    </Suspense>
+  )
 }
-
-export default App;
