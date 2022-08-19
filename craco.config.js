@@ -25,8 +25,5 @@ const alias = generateAliases()
 module.exports = {
   webpack: {
     alias: alias
-  },
-  eslint: {
-    enable: false
   }
 }
