@@ -4,7 +4,7 @@ import React from 'react'
 // Interfaces
 import { LanguageType } from '@interfaces/Languages.interfaces'
 
-export type ValueType = string | number | boolean | null | undefined
+export type ValueType = string | number | boolean | null | unknown[] | undefined
 
 export type MultiLangType = {
   es: string
@@ -25,7 +25,7 @@ export type ErrorsType = {
 }
 
 export type ExtraDataType = {
-  [key: string]: string | number | null | Function
+  [key: string]: string | number | null | Function | any[]
 }
 
 export type LimitType = {

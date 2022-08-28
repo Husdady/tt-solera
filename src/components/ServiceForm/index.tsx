@@ -57,7 +57,7 @@ const ServiceForm: React.FC<ServiceFormProps> = ({
       isNew: true,
       serviceName: '',
       serviceDescription: '',
-      serviceCategories: [] as string[]
+      serviceCategories: []
     },
     onSubmit: (formData: FormDataType) => {
       const { values, extraData } = formData
@@ -89,7 +89,8 @@ const ServiceForm: React.FC<ServiceFormProps> = ({
           )
 
           // Create Service copy without reference
-          const copyServices = extraData.currentServices.slice()
+          const copyServices =
+            extraData.currentServices.slice() as ServiceType[]
           copyServices[i] = newService // Update Service
           updateServices(copyServices)
           return false
@@ -153,7 +154,7 @@ const ServiceForm: React.FC<ServiceFormProps> = ({
         serviceCategories: service.serviceCategories
       })
     }
-  }, [language, service.id])
+  }, [service.id])
 
   return (
     <form
