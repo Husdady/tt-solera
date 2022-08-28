@@ -1,6 +1,10 @@
+// React
+import React from 'react'
+
+// Interfaces
 import { LanguageType } from '@interfaces/Languages.interfaces'
 
-export type ValueType = string | number | boolean | null | string[] | undefined
+export type ValueType = string | number | boolean | null | undefined
 
 export type MultiLangType = {
   es: string
@@ -21,7 +25,7 @@ export type ErrorsType = {
 }
 
 export type ExtraDataType = {
-  [key: string]: string | number | null | Function | Object | Array<any>
+  [key: string]: string | number | null | Function
 }
 
 export type LimitType = {
@@ -39,15 +43,15 @@ export type SchemaRuleType = {
   max?: LimitType
 }
 
+export type ValidationSchemaType = {
+  [key: string]: Omit<SchemaRuleType, 'field'>
+}
+
 export type FormDataType = {
   values: ValuesType
   resetForm: Function
   extraData: ExtraDataType
   setErrors: (errors: ErrorsType) => void
-}
-
-export type ValidationSchemaType = {
-  [key: string]: Omit<SchemaRuleType, 'field'>
 }
 
 export type UseFormProps = {
@@ -67,14 +71,19 @@ export type UseFormReturnType = LanguageType & {
   setFieldValue: (field: string, value: ValueType) => void
   multipleSetField: (fields: ValuesType) => void
   handleSubmit: (
-    extraData?: ExtraDataType
-  ) => React.FormEventHandler<HTMLFormElement>
+    extraData: ExtraDataType
+  ) => (e: React.FormEvent<HTMLFormElement>) => void
+}
+
+export type UpdateErrorLangType = {
+  currentLang: string
+  currentValues: ValuesType
 }
 
 export type RunValidationSubmitType = {
   formValues: ValuesType
   schemaErrors: ErrorsType
-  extraData: ExtraDataType
+  extraData?: ExtraDataType
 }
 
 export type RunValidationSchemaRulesType = {
